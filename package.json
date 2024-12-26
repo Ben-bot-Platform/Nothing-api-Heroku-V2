@@ -2,9 +2,9 @@
     "name": "api-dashboard",
     "version": "1.0.0",
     "description": "API Dashboard with Maker, Downloader, and More",
-    "main": "app.js",
+    "main": "index.js",
     "scripts": {
-        "start": "node app.js"
+        "start": "node index.js"
     },
     "engines": {
         "node": "18.x"
