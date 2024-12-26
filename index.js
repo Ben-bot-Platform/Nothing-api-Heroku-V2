@@ -7,7 +7,9 @@ const port = process.env.PORT || 8080;
 const timeLimit = 24 * 60 * 60 * 1000; // مدت زمان 24 ساعت (میلی‌ثانیه)
 const apiKeyFile = path.join(__dirname, 'apikeyall.json'); // مسیر فایل کلیدها
 const ipDataFile = path.join(__dirname, 'allapikeyip.json'); // مسیر ذخیره اطلاعات IP و تعداد استفاده
-
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
 // بارگذاری کلیدهای API از فایل
 const loadApiKeys = () => {
     if (!fs.existsSync(apiKeyFile)) {
